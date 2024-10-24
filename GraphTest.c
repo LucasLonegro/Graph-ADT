@@ -64,11 +64,13 @@ int main(int argc, char* argv[]){
    printf("------------------Test Transpose:-----------------------\n");
    Q = transpose(G);
    printfGraph(Q);
+   freeGraph(&Q);
 
    /* Test Copy */
    printf("------------------Test Copy:-----------------------\n");
    Q = copyGraph(G);
    printfGraph(Q);
+   freeGraph(&Q);
    
    freeList(&L);
    freeGraph(&G);
